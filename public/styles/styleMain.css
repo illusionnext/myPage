@@ -77,8 +77,9 @@ nav ul li {
 
 main {
   display: grid;
-  gap: 0.625rem;
   grid: masonry / repeat(4, 1fr);
+  gap: 0.625rem;
+  padding: 0.625rem 0;
 }
 
 figure {
@@ -91,6 +92,8 @@ figure > img {
   grid-row: 1 / -1;
   grid-column: 1;
   border-radius: 0.3125rem;
+  max-width: 100%;
+  display: block;
 }
 
 figure a {
@@ -110,7 +113,35 @@ figcaption {
 .networking {
   display: grid;
   position: fixed;
-  right: 0.5rem;
+  right: 1rem;
   top: 40dvh;
   grid: repeat(5, 1fr) / auto-flow dense 1fr;
+  row-gap: 0.625rem;
+  width: fit-content;
+}
+
+.bi {
+  font-size: 1.5rem;
+}
+
+.networking
+  :is(.bi-envelope-at, .bi-instagram, .bi-twitter, .bi-github, .bi-reddit) {
+  background: linear-gradient(to right, #ffcca2, #b388e2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.networking
+  :is(
+    .bi-envelope-at,
+    .bi-instagram,
+    .bi-twitter,
+    .bi-github,
+    .bi-reddit
+  ):hover {
+  background: linear-gradient(to right, #b388e2, #ffcca2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
