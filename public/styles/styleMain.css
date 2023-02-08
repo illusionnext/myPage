@@ -107,3 +107,10 @@ figcaption {
 }
 
 /* !NETWORKING */
+.networking {
+  display: grid;
+  position: fixed;
+  right: 0.5rem;
+  top: 40dvh;
+  grid: repeat(5, 1fr) / auto-flow dense 1fr;
+}
