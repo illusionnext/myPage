@@ -115,7 +115,7 @@ figcaption {
   position: fixed;
   right: 1rem;
   top: 40dvh;
-  grid: repeat(5, 1fr) / auto-flow dense 1fr;
+  grid: repeat(6, 1fr) / auto-flow dense 1fr;
   row-gap: 0.625rem;
   width: fit-content;
 }
@@ -125,7 +125,14 @@ figcaption {
 }
 
 .networking
-  :is(.bi-envelope-at, .bi-instagram, .bi-twitter, .bi-github, .bi-reddit) {
+  :is(
+    .bi-envelope-at,
+    .bi-instagram,
+    .bi-twitter,
+    .bi-github,
+    .bi-reddit,
+    .bi-telegram
+  ) {
   background: linear-gradient(to right, #ffcca2, #b388e2);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -138,7 +145,8 @@ figcaption {
     .bi-instagram,
     .bi-twitter,
     .bi-github,
-    .bi-reddit
+    .bi-reddit,
+    .bi-telegram
   ):hover {
   background: linear-gradient(to right, #b388e2, #ffcca2);
   -webkit-text-fill-color: transparent;
