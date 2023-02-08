@@ -1,0 +1,107 @@
+/* ? Open-Sans 300 400 600 800, Montserrat 100 300 400 600 800 900, Pacifico 100 300 400 700 900, Roboto 100 300 400 700 900 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800;900&family=Open+Sans:wght@300;400;600;800&family=Pacifico&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+/* ? @import url('../../node_modules/bootstrap/dist/css/bootstrap.min.css');  */
+@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  padding: 5rem;
+  font: 1rem 'Open-Sans', sans-serif;
+  height: 100dvh;
+}
+
+h1 {
+  font: 2rem 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.gradient {
+  background: linear-gradient(from top to bottom, #feffd6, #ffc3ad);
+}
+
+/*! N A V */
+nav {
+  display: grid;
+  grid: minmax(min-content, 1fr) / auto-flow dense 1fr;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #333;
+}
+
+nav ul {
+  display: grid;
+  grid: auto-flow dense 1fr / 8rem repeat(4, [ link ] 1fr) minmax(
+      min-content,
+      5rem
+    );
+  place-items: safe center;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.activeLogo {
+  font-size: 2rem;
+}
+
+/* ! USE IT WHENEVER YOU NEED IT */
+.boxShadow {
+  box-shadow: 0.5rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.5);
+}
+
+.colored {
+  background: linear-gradient(to right, #ffcca2, #b388e2);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0.125rem 0.3125rem 0.125rem rgb(0 0 0 / 0.4));
+}
+
+/* ! MAIN */
+
+main {
+  display: grid;
+  gap: 0.625rem;
+  grid: masonry / repeat(4, 1fr);
+}
+
+figure {
+  /* margin: 0; */
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  border-radius: 0.3125rem;
+}
+
+figure a {
+  color: #000;
+  text-decoration: none;
+}
+
+figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0.5em;
+  justify-self: center;
+}
