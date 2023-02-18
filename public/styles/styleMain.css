@@ -85,6 +85,9 @@ nav ul li a {
 main {
   display: grid;
   grid: masonry / repeat(4, 1fr);
+  /* grid: masonry / repeat(4, 1fr); */ /* !experimental*/
+  /* masonry-auto-flow: next; */ /* !experimental*/
+  /* align-tracks: start; */ /* !experimental*/
   gap: 0.625rem;
   padding: 0.625rem 0;
 }
