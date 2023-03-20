@@ -1,0 +1,18 @@
+{
+  "name": "mypage",
+  "version": "1.0.0",
+  "description": "my first official web page",
+  "type": "module",
+  "main": "main.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fred Kydd",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "web3": "^1.8.2"
+  }
+}
