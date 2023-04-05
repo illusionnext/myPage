@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 // npm install dotenv --save
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import * as dotenv from "dotenv";
