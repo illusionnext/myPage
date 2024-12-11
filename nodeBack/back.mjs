@@ -9,13 +9,26 @@ const app = express();
 dotenv.config();
 
 let client, db;
-const connectToMongoDB = async () => { client = new MongoClient(process.env.mongoDBConnect); await client.connect(); db = client.db("illusion") };
+const connectToMongoDB = async () => {
+  client = new MongoClient(process.env.mongoDBConnect);
+  await client.connect();
+  db = client.db("illusion");
+};
 
-(async () => await connectToMongoDB()
-  .then(() => { console.log("Connected to MongoDB 😍"), app.listen(process.env.port, () => { console.log(`Server's started at ${process.env.port} 🚨`) }); })
-  .catch((err) => { console.log(err) })
-  .finally(async () => await console.log("MongoDB connection's been ended 😞")))
-  ();
+(async () =>
+  await connectToMongoDB()
+    .then(() => {
+      console.log("Connected to MongoDB 😍"),
+        app.listen(process.env.port, () => {
+          console.log(`Server's started at ${process.env.port} 🚨`);
+        });
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(
+      async () => await console.log("MongoDB connection's been ended 😞"),
+    ))();
 
 app.use(express.json(), cors);
 
