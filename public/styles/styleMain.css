@@ -1,8 +1,8 @@
 /* ? Open-Sans 300 400 600 800, Montserrat 100 300 400 600 800 900, Pacifico 100 300 400 700 900, Roboto 100 300 400 700 900 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800;900&family=Open+Sans:wght@300;400;600;800&family=Pacifico&family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800;900&family=Open+Sans:wght@300;400;600;800&family=Pacifico&family=Roboto:wght@100;300;400;700;900&display=swap");
 
 /* ? @import url('../../node_modules/bootstrap/dist/css/bootstrap.min.css');  */
-@import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+@import url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
 
 *,
 *::before,
@@ -18,16 +18,20 @@ body {
   /* background-color: #000;
   color: #fff; */
   padding: 5rem;
-  font: 1rem 'Open-Sans', sans-serif;
+  font:
+    1rem "Open-Sans",
+    sans-serif;
   height: 100dvh;
 }
 
 h1 {
-  font: 2rem 'Montserrat', sans-serif;
+  font:
+    2rem "Montserrat",
+    sans-serif;
 }
 
 .gradient {
-  background: linear-gradient(from top to bottom, #feffd6, #ffc3ad);
+  background: linear-gradient(to bottom, #feffd6, #ffc3ad);
 }
 
 /*! N A V */
@@ -41,7 +45,7 @@ nav {
 
 nav ul {
   display: grid;
-  grid: auto-flow dense 1fr / 9rem repeat(4, [ link ] 1fr) minmax(
+  grid: auto-flow dense 1fr / 9rem repeat(4, [ link] 1fr) minmax(
       min-content,
       5rem
     );
@@ -63,7 +67,7 @@ nav ul li a {
 
 .activeLogo a svg {
   display: block;
-  font: 12rem 'Montserrat';
+  font: 12rem "Montserrat";
   height: 3rem;
 }
 
@@ -129,7 +133,7 @@ main figcaption a {
 
 main figcaption a svg {
   display: block;
-  font: 7rem 'Montserrat';
+  font: 7rem "Montserrat";
   width: 9rem;
   height: 3rem;
   margin: 0 auto;
@@ -137,7 +141,7 @@ main figcaption a svg {
 
 main figcaption a svg:hover {
   display: block;
-  font: 9rem 'Montserrat';
+  font: 9rem "Montserrat";
   width: 9rem;
   height: 3rem;
   margin: 0 auto;

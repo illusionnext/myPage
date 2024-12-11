@@ -10,7 +10,9 @@ import { dirname } from "path";
 // import "public/scripts/web3-provider.js";
 
 dotenv.config();
-const app = express(), __filename = fileURLToPath(import.meta.url), __dirname = dirname(__filename);
+const app = express(),
+  __filename = fileURLToPath(import.meta.url),
+  __dirname = dirname(__filename);
 // web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
 
 app.use(express.urlencoded({ extended: true }));
@@ -19,4 +21,7 @@ app.use(express.static(__dirname));
 app.get("/", (req, res) => res.sendFile(__dirname + "/index.html"));
 // app.port()
 
-app.listen(process.env.PORT, console.log(`server is running on ${process.env.PORT} port 🚨`));
+app.listen(
+  process.env.PORT,
+  console.log(`server is running on ${process.env.PORT} port 🚨`),
+);
